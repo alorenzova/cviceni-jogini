@@ -23,36 +23,28 @@ document.querySelector('#root').innerHTML = render(
 */
 
 document.querySelector('#root').innerHTML = `
-  <div class="container">
+<div id="app" class="app container">
     <header>
-      <h1>Jogíni</h1>
+      <h1 class="site-title">Jogíni</h1>
       <nav>
-        <ul>
-          <li><a href="#home">DOMŮ</a></li>
-          <li><a href="#lekce">LEKCE</a></li>
-          <li><a href="#tym">NÁŠ TÝM</a></li>
-          <li><a href="#udalosti">UDÁLOSTI</a></li>
-          <li><a href="#kontakt">KONTAKT</a></li>
-        </ul>
+        <a href="#">domů</a>
+        <a href="#">lekce</a>
+        <a href="#">náš tým</a>
+        <a href="#">události</a>
+        <a href="#">kontakt</a>
       </nav>
     </header>
 
-    <main>
-      <section id="home">
-        <h2>Vítejte mezi Jogíny</h2>
-        <p>Naše lekce jsou zaměřeny na potřeby klientů, kteří mají odvahu zkusit něco nového. 
-          Cvičíme v pomalém tempu s podrobným slovním doprovodem. Postupně se seznámíte se základními 
-          principy jógy, jak přistupovat k sobě i ostatním. Krok za krokem objevíte a dostanete pod 
-          kontrolu svoje tělo, pocity a emoce.
-        </p>
-      </section>
-
-      <section id="image-section">
-        <div class="image-container">
-          <img src="./img/yoga-pose.jpg" alt="Yoga pose" />
-        </div>
-      </section>
-    </main>
+    <div class="intro">
+      <h2>Vítejte mezi Jogíny</h2>
+      <p>
+        Naše lekce jsou zaměřeny na potřeby klientů, kteří mají odvahu zkusit
+        něco nového. Cvičíme v pomalém tempu s podrobným slovním doprovodem.
+        Postupně se seznámíte se základními principy jógy, jak přístupovat k
+        sobě i ostatním. Krok za krokem objevíte a dostanete pod kontrolu
+        svoje tělo, pocity a emoce.
+      </p>
+    </div>
+    <img class="pose" src="img/yoga-pose.jpg" />
   </div>
 `;
-
